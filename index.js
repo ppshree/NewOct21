@@ -1,74 +1,74 @@
 // console.clear();
-var list=document.getElementById("list")
-var form=document.getElementById("form")
-var addItem=document.getElementById("btn-add")
-var nameHolder=document.getElementById("name-holder")
-var todoInputBox=document.getElementById("todo-input-box")
-form.addEventListener('submit',function(e){
-    e.preventDefault()
-})
+// var list=document.getElementById("list")
+// var form=document.getElementById("form")
+// var addItem=document.getElementById("btn-add")
+// var nameHolder=document.getElementById("name-holder")
+// var todoInputBox=document.getElementById("todo-input-box")
+// form.addEventListener('submit',function(e){
+//     e.preventDefault()
+// })
 
-function renderTodoItem(){
-    var card=document.createElement("div")
-    card.className="item"
-    var cardWrapper=document.createElement("div")
-    var cardHeading=document.createElement("h3")
-    cardHeading.innerHTML=todoInputBox.value
-    var cardPara=document.createElement("p")
-    var currentDate= new Date()
-    cardPara.innerHTML=currentDate.getDate()+"-"+(parsevar(currentDate.getMonth())+1) +"-"+currentDate.getFullYear()+" "+currentDate.getHours()+":"+currentDate.getMinutes()+":"+currentDate.getSeconds()+":"+currentDate.getMilliseconds()
-    list.prepend(card)
-    todoInputBox.value="";
-    cardWrapper.appendChild(cardHeading)
-    cardWrapper.appendChild(cardPara)
-    card.appendChild(cardWrapper)
-    var deleteIcon=document.createElement("i")
-    deleteIcon.className="fas fa-trash"
-    card.appendChild(deleteIcon)
-    deleteIcon.addEventListener('click',function(){
-      confirm("delete this selected item") 
-      card.remove()
-    })
+// function renderTodoItem(){
+//     var card=document.createElement("div")
+//     card.className="item"
+//     var cardWrapper=document.createElement("div")
+//     var cardHeading=document.createElement("h3")
+//     cardHeading.innerHTML=todoInputBox.value
+//     var cardPara=document.createElement("p")
+//     var currentDate= new Date()
+//     cardPara.innerHTML=currentDate.getDate()+"-"+(parsevar(currentDate.getMonth())+1) +"-"+currentDate.getFullYear()+" "+currentDate.getHours()+":"+currentDate.getMinutes()+":"+currentDate.getSeconds()+":"+currentDate.getMilliseconds()
+//     list.prepend(card)
+//     todoInputBox.value="";
+//     cardWrapper.appendChild(cardHeading)
+//     cardWrapper.appendChild(cardPara)
+//     card.appendChild(cardWrapper)
+//     var deleteIcon=document.createElement("i")
+//     deleteIcon.className="fas fa-trash"
+//     card.appendChild(deleteIcon)
+//     deleteIcon.addEventListener('click',function(){
+//       confirm("delete this selected item") 
+//       card.remove()
+//     })
 
-var mArr=localStorage.getItem("list")===null ? [] :JSON.parse(localStorage.getItem("list"))
-mArr.push({
-    message:cardHeading.innerHTML,
-    date:cardPara.innerHTML
-})
-localStorage.setItem("list",JSON.stringify(mArr))
+// var mArr=localStorage.getItem("list")===null ? [] :JSON.parse(localStorage.getItem("list"))
+// mArr.push({
+//     message:cardHeading.innerHTML,
+//     date:cardPara.innerHTML
+// })
+// localStorage.setItem("list",JSON.stringify(mArr))
 
     
-}
+// }
 
-addItem.addEventListener('click',function(){
-    if(todoInputBox.value===""){
-        alert("Please enter the todo item")
-        return
-    }
-    renderTodoItem()
-})
+// addItem.addEventListener('click',function(){
+//     if(todoInputBox.value===""){
+//         alert("Please enter the todo item")
+//         return
+//     }
+//     renderTodoItem()
+// })
 
 
-var form=document.getElementById("form");
-form.addEventListener('submit',function(e){
-    e.preventDefault()
-});
-var toDoInput=document.getElementById("todo-input-box");
-var btn=document.getElementById("btn-add");
-var listItem=document.getElementById("list");
+// var form=document.getElementById("form");
+// form.addEventListener('submit',function(e){
+//     e.preventDefault()
+// });
+// var toDoInput=document.getElementById("todo-input-box");
+// var btn=document.getElementById("btn-add");
+// var listItem=document.getElementById("list");
 
-function rederTodoItem(){
+// function rederTodoItem(){
     
-}
+// }
 
 
 
-btn.addEventListener('click',function(){
-if(toDoInput.value===""){
-    alert("Please enter the todo item")
-}
+// btn.addEventListener('click',function(){
+// if(toDoInput.value===""){
+//     alert("Please enter the todo item")
+// }
 
-})
+// })
 
 
 
