@@ -1,0 +1,67 @@
+#main{
+    font-size: 40px;
+   
+    
+    color: brown;
+    cursor: pointer;
+}
+body{
+    background-color: cornflowerblue;
+}
+#main:hover{
+    color: darkgoldenrod;
+}
+
+.dynamic{
+    color: darkgreen;
+    font-style: italic;
+}
+#btn-add{
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: yellowgreen;
+}
+#shree{
+    font-size: 40px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+}
+.list{
+    text-align: center;
+}
+.item{
+    box-shadow: 0  0 8px #ccc;
+    margin: 10px;
+    padding: 5px;
+    width: 15%;
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.item h3{
+    margin: 0;
+}
+.item p{
+    margin: 0;
+    margin-top: 8px;
+    color: gray;
+    font-size: 12px;
+}
+#todo-input-box{
+    font-size: 30px;
+    border-radius: 4px;
+    background-color:palegreen;
+
+    
+
+}
+#form{
+    text-align: center;
+}
